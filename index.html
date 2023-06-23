@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>developer websites</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">Portfo<span class="logo2">lio</span></a>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-sharp fa-solid fa-xmark" onclick="closemenu()"></i>
+
+                </ul>
+                <i class="fa-sharp fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi , I am <span>Shrinath</span><br> Kashid from Pune</h1>
+            </div>
+        </div>
+    </div>
+    <!-----------------------about------------------------------------------------------------------------------------->
+
+    <div id="about">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="about-col-1">
+                    <img src="./Image/user.png">
+                </div>
+
+                <div class="about-col-2">
+
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Hey there! I'm Shrinath Lahu Kashid,
+                        a frontend developer passionate about creating exceptional user
+                        experiences.I specialize in HTML, CSS, and JavaScript,React, and love
+                        turning design ideas into functional websites. I collaborate closely
+                        with clients and designers to deliver visually appealing, responsive sites.
+                        I'm always exploring new technologies and enjoy contributing to the tech community.
+                        Let's connect and create something exceptional together!
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing web/App interfaces</li>
+                            <li><span>Web Development</span><br> web App Development</li>
+                            <li><span>App Development</span><br>Building Android /iOS apps</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+
+                        <ul>
+                            <li><span>2022-current</span><br>UI/UX Design Training sKILL Link institude</li>
+                            <li><span>2019-2021</span><br>Team lead at Jabil PVR LTD PUNE.</li>
+                            <li><span>2017-2019</span><br>UI/UX Design Executive at coin Digital ltd</li>
+                            <li><span>2016-2017</span><br>Intership at Adobe Software industry..</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="tab-contents" id="education">
+
+                        <ul>
+                            <li><span>2016</span><br>Adarsh Vidyalay Ratanjan. Dist Solapur.</li>
+                            <li><span>2016</span><br>Indira Institude of Diploma Engg Vairag City.</li>
+                            <li><span>2014</span><br>Sinhgad Collage of Enggineearing Pune.(Main Branch)</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------Services------ ----------------------------------------------------->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Sapiente asperiores ullam quia sunt beatae
+                        at quos quo et hic eos debitis facere expedita voluptas,
+                        rerum voluptatibus molestias odio autem quasi.</p>
+                    <a href="#"> Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Sapiente asperiores ullam quia sunt beatae
+                        at quos quo et hic eos debitis facere expedita voluptas,
+                        rerum voluptatibus molestias odio autem quasi.</p>
+                    <a href="#"> Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fas fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Sapiente asperiores ullam quia sunt beatae
+                        at quos quo et hic eos debitis facere expedita voluptas,
+                        rerum voluptatibus molestias odio autem quasi.</p>
+                    <a href="#"> Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------portfolio-------------------------------------------------------------------------------------------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./Image/work-1.png">
+                    <div class="layer">
+                        <h3>Movie-app</h3>
+                        <p> The app cannected to talented people around the world. download it from the playstore.</p>
+                        <a href="https://shrinath-kashid.github.io/movie-app/"><i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+
+                </div>
+                <div class="work">
+                    <img src="./Image/work-2.png">
+                    <div class="layer">
+                        <h3>Expense tracker</h3>
+                        <p> The app cannected to talented people around the world. download it from the playstore.</p>
+                        <a href="https://shrinath-kashid.github.io/expense-tracker/"><i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./Image/work-3.png">
+                    <div class="layer">
+                        <h3>online shopping App</h3>
+                        <p> The app cannected to talented people around the world. download it from the playstore.</p>
+                        <a href="https://github.com/Shrinath-kashid/shopping-cardapp"><i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- ----------Contact---------------------------------------------------------------------------------------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fa-regular fa-paper-plane fa-sm"></i>Kashidshrinath@gmail.com</p>
+                    <p> <i class="fa-duotone fa-phone"></i>7083141932</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                        <a href="https://github.com/Shrinath-kashid"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="image/sk resume 123.docx" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Massage" rows="6" placeholder="Your Massage"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg">Hello</span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright @ shrinath .made with by <i class="fa-solid fa-heart"></i> easy project. like it </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
